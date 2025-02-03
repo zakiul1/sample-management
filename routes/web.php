@@ -39,8 +39,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     // Cabinate Routes
     Route::get('cabinates', [CabinetController::class, 'index'])->name('cabinates.index');
-    Route::get('cabinates/create', [CabinetController::class, 'create'])->name('cabinates.create');
-    Route::post('cabinates', [CabinetController::class, 'store'])->name('cabinates.store');
+    Route::post('cabinates/create', [CabinetController::class, 'store'])->name('cabinates.store');
+
+    
     Route::get('cabinates/{id}', [CabinetController::class, 'show'])->name('cabinates.show');
     Route::get('cabinates/{id}/edit', [CabinetController::class, 'edit'])->name('cabinates.edit');
     Route::put('cabinates/{id}', [CabinetController::class, 'update'])->name('cabinates.update');

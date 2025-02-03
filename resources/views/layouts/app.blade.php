@@ -21,6 +21,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
+        
     <div class="flex h-screen">
         <!-- Side Bar content  -->
        <div x-data="{ sidebarIsOpen: false }" class="relative flex w-full flex-col md:flex-row">
@@ -72,6 +73,22 @@
  
 
 
+<!-- Sample item  -->
+<a href="{{ route('samples.index') }}" class="flex items-center rounded-radius gap-2 px-2 py-1.5 text-sm font-medium 
+           text-on-surface underline-offset-2 
+           hover:bg-primary/5 hover:text-on-surface-strong 
+           focus-visible:underline focus:outline-hidden 
+           dark:text-on-surface-dark dark:hover:bg-primary-dark/5 dark:hover:text-on-surface-dark-strong
+           {{ Route::currentRouteName() == 'samples.index' ? 'text-red-500 bg-primary/10 text-on-surface-strong' : '' }}">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
+            <path d="M203.194 127.92a5.5 5.5 0 0 0-3.776 6.8 58.862 58.862 0 0 0 113.164 0 5.5 5.5 0 1 0-10.576-3.024 47.862 47.862 0 0 1-92.012 0 5.5 5.5 0 0 0-6.8-3.776zM356.8 194.113a5.5 5.5 0 0 0-6.844 3.697l-6.787 22.727a5.506 5.506 0 0 0-.23 1.573v170.24l-174.014-.404V221.681a5.507 5.507 0 0 0-.23-1.574l-6.787-22.727a5.5 5.5 0 1 0-10.54 3.147l6.557 21.957v174.95a5.5 5.5 0 0 0 5.488 5.5l185.013.429h.013a5.5 5.5 0 0 0 5.5-5.5V222.914l6.557-21.957a5.5 5.5 0 0 0-3.696-6.844z"/>
+            <path d="m447.176 209.59-75.059-75.082q-.85-.85-1.72-1.677a88.97 88.97 0 0 0-60.827-24.138l-5.529-.047h-.047a5.5 5.5 0 0 0-.046 11l5.529.047a78.004 78.004 0 0 1 53.345 21.116q.765.726 1.515 1.476l71.172 71.193-48.797 48.797-16.436-16.435a5.5 5.5 0 0 0-7.778 7.778l20.324 20.325a5.5 5.5 0 0 0 7.779 0l56.574-56.575a5.5 5.5 0 0 0 0-7.778zM142.108 245.456l-16.82 16.82-48.797-48.798 71.172-71.193q.749-.75 1.514-1.475a78.002 78.002 0 0 1 53.347-21.117l6.552-.056a5.5 5.5 0 0 0-.046-11h-.048l-6.552.056a88.97 88.97 0 0 0-60.828 24.14q-.868.825-1.718 1.674l-75.06 75.083a5.5 5.5 0 0 0 0 7.778l56.575 56.575a5.5 5.5 0 0 0 7.779 0l20.709-20.71a5.5 5.5 0 0 0-7.779-7.778z"/>
+        </svg>
+        
+    <span>Sample</span>
+</a>
+
+<!-- Sample item  -->
 <!-- Cabinet item  -->
 <a href="{{ route('cabinates.index') }}" class="flex items-center rounded-radius gap-2 px-2 py-1.5 text-sm font-medium 
            text-on-surface underline-offset-2 
@@ -79,12 +96,12 @@
            focus-visible:underline focus:outline-hidden 
            dark:text-on-surface-dark dark:hover:bg-primary-dark/5 dark:hover:text-on-surface-dark-strong
            {{ Route::currentRouteName() == 'cabinates.index' ? 'text-red-500 bg-primary/10 text-on-surface-strong' : '' }}">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 shrink-0"
-        aria-hidden="true">
-        <path fill-rule="evenodd"
-            d="M7.84 1.804A1 1 0 0 1 8.82 1h2.36a1 1 0 0 1 .98.804l.331 1.652a6.993 6.993 0 0 1 1.929 1.115l1.598-.54a1 1 0 0 1 1.186.447l1.18 2.044a1 1 0 0 1-.205 1.251l-1.267 1.113a7.047 7.047 0 0 1 0 2.228l1.267 1.113a1 1 0 0 1 .206 1.25l-1.18 2.045a1 1 0 0 1-1.187.447l-1.598-.54a6.993 6.993 0 0 1-1.929 1.115l-.33 1.652a1 1 0 0 1-.98.804H8.82a1 1 0 0 1-.98-.804l-.331-1.652a6.993 6.993 0 0 1-1.929-1.115l-1.598.54a1 1 0 0 1-1.186-.447l-1.18-2.044a1 1 0 0 1 .205-1.251l1.267-1.114a7.05 7.05 0 0 1 0-2.227L1.821 7.773a1 1 0 0 1-.206-1.25l1.18-2.045a1 1 0 0 1 1.187-.447l1.598.54A6.992 6.992 0 0 1 7.51 3.456l.33-1.652ZM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-            clip-rule="evenodd" />
-    </svg>
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 128 128">
+            <path d="M103.892 23.56H24.109a2.735 2.735 0 0 0-2.732 2.731v6.7a2.736 2.736 0 0 0 2.732 2.732h1.078v65.124a2.734 2.734 0 0 0 2.731 2.732h3.832v1.81a4.938 4.938 0 0 0 9.875 0v-1.81h44.75v1.81a4.938 4.938 0 0 0 9.875 0v-1.81h3.831a2.734 2.734 0 0 0 2.732-2.732V35.719h1.079a2.735 2.735 0 0 0 2.731-2.732v-6.7a2.735 2.735 0 0 0-2.731-2.727zm-65.767 81.825a1.438 1.438 0 0 1-2.875 0v-1.81h2.875zm54.625 0a1.438 1.438 0 0 1-2.875 0v-1.81h2.875zm6.563-5.31H28.687V35.719h3.688a6.145 6.145 0 0 0-.625 2.693V50.1a6.171 6.171 0 0 0 1.889 4.443 6.171 6.171 0 0 0-1.889 4.443V70.67a6.17 6.17 0 0 0 1.889 4.444 6.172 6.172 0 0 0-1.889 4.444v11.685a6.2 6.2 0 0 0 6.193 6.194h52.114a6.2 6.2 0 0 0 6.193-6.194V79.558a6.172 6.172 0 0 0-1.889-4.444 6.17 6.17 0 0 0 1.889-4.444V58.984a6.171 6.171 0 0 0-1.889-4.443A6.171 6.171 0 0 0 96.25 50.1V38.412a6.145 6.145 0 0 0-.625-2.693h3.688zM92.75 38.412V50.1a2.7 2.7 0 0 1-2.693 2.693H37.943A2.7 2.7 0 0 1 35.25 50.1V38.412a2.7 2.7 0 0 1 2.693-2.693h52.114a2.7 2.7 0 0 1 2.693 2.693zm0 20.572V70.67a2.7 2.7 0 0 1-2.693 2.694H37.943a2.7 2.7 0 0 1-2.693-2.694V58.984a2.7 2.7 0 0 1 2.693-2.693h52.114a2.7 2.7 0 0 1 2.693 2.693zm0 20.574v11.685a2.7 2.7 0 0 1-2.693 2.694H37.943a2.7 2.7 0 0 1-2.693-2.694V79.558a2.7 2.7 0 0 1 2.693-2.694h52.114a2.7 2.7 0 0 1 2.693 2.694zm10.373-47.339H24.877V27.06h78.246z"/>
+            <path d="M64 48.352a4.1 4.1 0 1 0-4.1-4.1 4.1 4.1 0 0 0 4.1 4.1zm0-4.693a.6.6 0 1 1-.6.6.6.6 0 0 1 .6-.6zM64 68.924a4.1 4.1 0 1 0-4.1-4.1 4.1 4.1 0 0 0 4.1 4.1zm0-4.693a.6.6 0 1 1-.6.6.6.6 0 0 1 .6-.6zM64 89.5a4.1 4.1 0 1 0-4.1-4.1 4.1 4.1 0 0 0 4.1 4.1zm0-4.7a.6.6 0 1 1-.6.6.6.6 0 0 1 .6-.6z"/>
+        </svg>
+        
+   
     <span>Cabinet</span>
 </a>
 
@@ -218,7 +235,7 @@
     <!-- top navbar & main content  -->
     <div class="h-svh w-full overflow-y-auto bg-surface dark:bg-surface-dark">
         <!-- top navbar  -->
-        <nav class="sticky top-0 z-10 flex items-center justify-between border-b border-outline bg-surface-alt px-4 py-2 dark:border-outline-dark dark:bg-surface-dark-alt" aria-label="top navibation bar">
+        <nav class="sticky top-0  z-10 flex items-center justify-between border-b border-outline bg-surface-alt px-4 py-2 dark:border-outline-dark dark:bg-surface-dark-alt" aria-label="top navibation bar">
 
             <!-- sidebar toggle button for small screens  -->
             <button type="button" class="md:hidden inline-block text-on-surface dark:text-on-surface-dark" x-on:click="sidebarIsOpen = true">
@@ -294,11 +311,10 @@
             </div>
         </nav>
         <!-- main content  -->
-        <div id="main-content" class="p-4">
+        <div id="main-content" class="p-2">
             <div class="overflow-y-auto">
                 <!-- Add main content here  -->
-
-                @yield('content') ;
+                @yield('content') 
             </div>
         </div>
     </div>
